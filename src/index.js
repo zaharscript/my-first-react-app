@@ -4,20 +4,15 @@ import "jquery";
 import "popper.js/dist/umd/popper";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "./App";
+import NavBar from "./NavBar";
+import MainComponent from "./MainContent";
+// import App from "./App";
 import "./index.css";
 
-let element = (
-  <div className="container">
-    <div classNameName="row text-center">
-      <strong>hellow world</strong>
-    </div>
-    <div classNameName="row">
-      <div classNameName="col-12 text-center">
-        <button className="btn btn-success">click me!</button>
-      </div>
-    </div>
-  </div>
+ReactDOM.render(
+  <React.Fragment>
+    <NavBar />
+    <MainComponent />
+  </React.Fragment>,
+  document.getElementById("root")
 );
-
-ReactDOM.render(<NavBar />, document.getElementById("root"));
