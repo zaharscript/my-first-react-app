@@ -1,9 +1,9 @@
-import { Component } from "react";
+import React, { Component } from "react";
 class NavBar extends Component {
   render() {
     return (
-      <>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-style">
+      <React.Fragment>
+        <nav className="navbar navbar-expand-lg  navbar-dark bg-body-tertiary navbar-style">
           <div className="container-fluid">
             <a className="navbar-brand" href="/#">
               MyApp.com
@@ -48,9 +48,8 @@ class NavBar extends Component {
             </div>
           </div>
         </nav>
-      </>
+      </React.Fragment>
     );
   }
 }
-
 export default NavBar;
